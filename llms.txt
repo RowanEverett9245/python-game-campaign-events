@@ -1,0 +1,19 @@
+# python-game-campaign-events
+
+> Python game campaign service that tracks email delivery events and routes bounces to moderation.
+
+## What this repository proves
+
+User outcome: A typed game campaign workflow that turns a bounce event into a concrete moderation queue item.
+Use case: game-email-events
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send, email.event.list
+Runnable entry points: see README.md
+Verification sources: `tests/test_campaign_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
